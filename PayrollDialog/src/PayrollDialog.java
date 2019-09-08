@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
  		/**
  			This program demonstrates using dialogs with
  			JOptionPane.  Converts string input to numeric. 		*/
-//commentss
+//comments
  		public class PayrollDialog {
  			public static void main(String[] args) 	{
  				String inputString; 		// For reading input
