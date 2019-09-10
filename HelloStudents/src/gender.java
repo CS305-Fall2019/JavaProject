@@ -17,4 +17,8 @@ public String toString() {
 public void setStatus(String status) {
 	this.status = status;
 }
+// Start: Refactoring pull method
+public void publicMethod() {
+	System.out.println("Pull me out to superclass");
+}
 }

@@ -45,4 +45,6 @@ public void setNetSalary15(double s) {
 public String toString() {
 	return "Person [fname=" + fname + ", familyname=" + familyname + ", age=" + age + ", netSalary=" + netSalary + "]";
 }
+public void pushmedown() {
+}
 }
