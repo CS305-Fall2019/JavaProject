@@ -1,5 +1,5 @@
 
-public class address extends Person{
+public class address extends Person_info{
 		 private String Street;
 		 private String zipcode;
 		 
@@ -15,5 +15,6 @@ public class address extends Person{
 		public void setZipcode(String zipcode) {
 			this.zipcode = zipcode;
 		}
-
+		public void pushmedown() {
+		}
 }

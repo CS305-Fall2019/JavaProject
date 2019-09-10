@@ -1,15 +1,13 @@
 
-public class Person {
+public class Person_info {
 private String fname;
 private String familyname;
 private int age;
 public double netSalary;
-//Start:Refactoring example to extract class
-public String officeAreacode;
-public String officeNumber;
+public PhoneNumber data = new PhoneNumber();
 //End:Refactoring example to extract class
 public String getPhoneNumber() {
-	return officeAreacode+"-"+officeNumber;
+	return data.officeAreacode+"-"+data.officeNumber;
 	}
 public String getFname() {
 	return fname;
@@ -34,17 +32,16 @@ public double getNetSalary() {
 	return netSalary;
 }
 //Start:Refactoring example to parameterize method
-public void setNetSalary10(double s) {
-	this.netSalary = s+s*0.10;
+public void setNetSalary(double s, double r) {
+	this.netSalary = s+s*r;
 }
-public void setNetSalary15(double s) {
-	this.netSalary = s+s*0.10;
-}
+
 //End:Refactoring example to parameterize method
 @Override
 public String toString() {
 	return "Person [fname=" + fname + ", familyname=" + familyname + ", age=" + age + ", netSalary=" + netSalary + "]";
 }
-public void pushmedown() {
+public void publicMethod() {
+	System.out.println("Pull me out to superclass");
 }
 }

@@ -1,5 +1,5 @@
 
-public class gender extends Person{
+public class gender extends Person_info{
  private String status;
 
 public String getStatus() {
@@ -9,16 +9,16 @@ public String getStatus() {
 
 @Override
 public String toString() {
-	return "gender [status=" + status + ", netSalary=" + netSalary + ", officeAreacode=" + officeAreacode
-			+ ", officeNumber=" + officeNumber + "]";
+	return "gender [status=" + status + ", netSalary=" + netSalary + ", officeAreacode=" + data.officeAreacode
+			+ ", officeNumber=" + data.officeNumber + "]";
 }
 
 
 public void setStatus(String status) {
 	this.status = status;
 }
-// Start: Refactoring pull method
-public void publicMethod() {
-	System.out.println("Pull me out to superclass");
+
+
+public void pushmedown() {
 }
 }
